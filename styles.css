@@ -140,16 +140,18 @@ blockquote {
 /* Sidebar */
 aside {
     background: #fff;
-    padding: 1rem;
+    /* padding: 1rem; */
+
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 aside h4{
     color: #000;
     text-decoration: underline;
     cursor: pointer;
 }
-aside li{
+aside p{
     background-color: hsl(0, 0%, 96%);
     text-decoration: underline #005bb5;
     list-style-type: none;
