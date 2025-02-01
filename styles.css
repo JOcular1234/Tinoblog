@@ -102,6 +102,10 @@ article{
 }
 .text1{
     text-align: start;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: -10px;
 }
 blockquote {
     background: #e7e7e7;
@@ -262,13 +266,8 @@ body.dark-mode .author {
         grid-template-columns: 1fr;
         flex-wrap: wrap;
     }
-    /* header .container {
-        flex-direction: column;
-        text-align: center;
-    }
-     */
+   
      article{
-        border: 1px solid;
         width: 100%;
         margin: 0 auto;
     }
@@ -317,6 +316,7 @@ body.dark-mode .author {
 @media (max-width: 1024px) {
     article{
         width: 100%;
+        margin: 0 auto;
     }
     .header-img{
         width: 100%;
@@ -326,5 +326,28 @@ body.dark-mode .author {
     }
     .logo {
         margin: 5px;
+    }
+    aside{
+        width: 100%;
+        margin-right: 200px;
+    }
+}
+@media (max-width: 1220px) {
+    article{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .header-img{
+        width: 100%;
+    }
+    .nav-links {
+        margin-right: 40px;
+    }
+    .logo {
+        margin: 5px;
+    }
+    aside{
+        width: 100%;
+        margin-right: 200px;
     }
 }
