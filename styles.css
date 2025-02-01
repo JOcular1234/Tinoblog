@@ -22,6 +22,7 @@ nav {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+
 }
 .container-nav span{
     color: #f71f1f;
@@ -42,6 +43,7 @@ nav {
     background: none;
     border: none;
     cursor: pointer;
+
 }
 .nav-links {
     list-style: none;
@@ -64,7 +66,7 @@ nav {
     transition: all .5s;
 }
 
-
+ 
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -78,6 +80,9 @@ main {
     margin-bottom: 1rem;
 }
 
+article{
+    width: 100%
+}
 .article h2 {
     color: #222;
     margin-bottom: 0.5rem;
@@ -209,6 +214,7 @@ footer {
     border: 1px solid  #fff;
     border-radius: 100%;
 }
+
 body.dark-mode {
     background-color: #1e1e1e;
     color: #fff;
@@ -220,7 +226,7 @@ body.dark-mode article {
     background: #2c2c2c;
     color: #fff;
 }
-body.dark-mode .quote {
+body.dark-mode blockquote {
     background: #444;
     border-left: 4px solid #ffcc00;
 }
@@ -241,14 +247,47 @@ body.dark-mode .author {
 @media (max-width: 768px) {
     main {
         grid-template-columns: 1fr;
+        flex-wrap: wrap;
     }
-    header .container {
+     article{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .header-img{
+        width: 100%;
+    }
+}
+@media (max-width: 820px) {
+    main {
+        grid-template-columns: 1fr;
+        flex-wrap: wrap;
+    }
+    /* header .container {
         flex-direction: column;
         text-align: center;
     }
-
+     */
+     article{
+        border: 1px solid;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .header-img{
+        width: 100%;
+    }
+    .nav-links {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 16px;
+        margin-right: 40px;
+        align-items: center;
+    }
+    .logo {
+        margin: 5px;
+    }
 }
-@media (max-width: 650px) {
+@media (max-width: 768px) {
     .nav-links {
         display: none;
         position: absolute;
@@ -272,6 +311,20 @@ body.dark-mode .author {
         display: block;
     }
     #darkModeToggle{
+        margin: 5px;
+    }
+}
+@media (max-width: 1024px) {
+    article{
+        width: 100%;
+    }
+    .header-img{
+        width: 100%;
+    }
+    .nav-links {
+        margin-right: 40px;
+    }
+    .logo {
         margin: 5px;
     }
 }
